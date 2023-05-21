@@ -1,0 +1,5 @@
+---
+'@gameastic/localization': patch
+---
+
+Tests
