@@ -1,5 +1,0 @@
----
-'@gameastic/localization': patch
----
-
-Tests
