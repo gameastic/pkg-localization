@@ -1,0 +1,27 @@
+{
+    "extends": "../../tsconfig.json",
+
+    "include": ["src"],
+    "exclude": [],
+
+    "compilerOptions": {
+        "strict": true,
+
+        "composite": true,
+
+        "baseUrl": ".",
+        "rootDir": "./src",
+        "outDir": "./dist",
+
+        "target": "ESNext",
+        "module": "ESNext",
+
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+
+        "allowJs": true,
+
+        "declaration": true,
+        "removeComments": true
+    }
+}

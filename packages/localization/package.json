@@ -1,0 +1,36 @@
+{
+    "name": "@gameastic/localization",
+    "version": "1.0.0",
+    "license": "MIT",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "author": "https://github.com/gameastic",
+    "description": "Localization Lib",
+    "private": false,
+    "files": [
+        "dist/**/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:gameastic/localization.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gameastic/localization/issues"
+    },
+    "keywords": [
+        "internationalization",
+        "localization",
+        "language",
+        "i18",
+        "i18n"
+    ],
+    "homepage": "https://github.com/gameastic/localization#readme",
+    "scripts": {
+        "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+        "test": "jest --config jestconfig.json",
+        "lint": "eslint 'src/**/*.{js,ts,ts}'",
+        "build": "npm run clean && tsc --build"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

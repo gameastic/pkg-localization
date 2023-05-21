@@ -1,0 +1,17 @@
+{
+    "name": "@gameastic/example",
+    "version": "1.0.0",
+    "license": "MIT",
+    "source": "index.html",
+    "author": "https://github.com/gameastic",
+    "description": "Example for Lego",
+    "private": true,
+    "scripts": {
+        "start": "rimraf dist && mkdir ./dist && cp -R ./assets ./dist && parcel --port 8080"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@gameastic/localization": "*",
+        "parcel": "^2.6.2"
+    }
+}
