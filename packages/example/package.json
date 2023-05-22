@@ -1,10 +1,10 @@
 {
-    "name": "@gameastic/example",
+    "name": "example",
     "version": "1.0.0",
     "license": "MIT",
     "source": "index.html",
     "author": "https://github.com/gameastic",
-    "description": "Example for Lego",
+    "description": "Example for Localization",
     "private": true,
     "scripts": {
         "start": "parcel --port 8080 --cache-dir .parcel-cache"
