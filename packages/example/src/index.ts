@@ -1,5 +1,6 @@
 import { Localization, type ILocalizationOptions } from '@gameastic/localization';
-(async () => {
+
+void (async () => {
     const config: ILocalizationOptions = {
         path: './locales/',
         fallback: 'en',

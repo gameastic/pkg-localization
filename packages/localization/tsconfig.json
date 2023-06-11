@@ -1,12 +1,11 @@
 {
     "extends": "../../tsconfig.json",
 
-    "include": ["src"],
+    "include": ["src", "typings"],
     "exclude": [],
 
     "compilerOptions": {
         "strict": true,
-
         "composite": true,
 
         "baseUrl": ".",
@@ -20,8 +19,7 @@
         "esModuleInterop": true,
 
         "allowJs": true,
-
         "declaration": true,
-        "removeComments": true
+        "sourceMap": true
     }
 }

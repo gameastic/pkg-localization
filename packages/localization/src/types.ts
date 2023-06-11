@@ -5,4 +5,4 @@ export interface ILocalizationOptions {
     mapping: Record<string, string[]>;
 }
 
-export interface IInterpolationOptions extends Record<string, string | number> {}
+export type IInterpolationOptions = Record<string, string | number>;

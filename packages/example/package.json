@@ -7,13 +7,22 @@
     "description": "Example for Localization",
     "private": true,
     "scripts": {
-        "start": "parcel --port 8080 --cache-dir .parcel-cache"
+        "lint": "eslint 'src/**/*.{js,ts,ts}'",
+        "clean": "rimraf dist",
+        "start": "npm run clean && mkdir dist && npm run _copy-assets && npm run _parcel-start",
+        "_copy-assets": "copy-files-from-to",
+        "_parcel-start": "parcel --cache-dir .parcel-cache --port 8080"
     },
+    "copyFiles": [
+        {
+            "from": "assets",
+            "to": "dist"
+        }
+    ],
     "dependencies": {},
     "devDependencies": {
         "@gameastic/localization": "*",
-        "parcel": "^2.8.3",
-        "parcel-reporter-static-files-copy": "^1.5.0",
-        "parcel-reporter-clean-dist": "^1.0.4"
+        "copy-files-from-to": "^3.9.0",
+        "parcel": "^2.9.2"
     }
 }
